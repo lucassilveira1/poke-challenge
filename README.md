@@ -38,32 +38,40 @@ Antes de iniciar o projeto, verifique se as seguintes tecnologias estão instala
 
 2. Instale as dependências:
 
--   npm install
+-   ```bash
+    npm install
+    ```
 
     # ou
 
--   yarn install
+-   ```bash
+    yarn install
+    ```
 
 3. Inicie a aplicação:
 
--   npm run dev
+-   ```bash
+    npm run dev
+    ```
 
     ## ou
 
--   yarn dev
+-   ```bash
+    yarn dev
+    ```
 
 4. Abra o navegador e acesse: http://localhost:5173.
 
 ## Estrutura do Projeto:
 
-# src:
+### src:
 
-/components: Componentes da aplicação
-/hooks: Hooks personalizados
-/interfaces: Definições de tipos e interfaces
-/pages: Páginas da aplicação
-App.tsx: Componente principal da aplicação
-index.tsx: Ponto de entrada da aplicação
+-   /components: Componentes da aplicação;
+-   /hooks: Hooks personalizados;
+-   /interfaces: Definições de tipos e interfaces;
+-   /pages: Páginas da aplicação;
+-   App.tsx: Componente principal da aplicação;
+-   index.tsx: Ponto de entrada da aplicação
 
 # Uso da PokeAPI:
 
@@ -73,4 +81,4 @@ A PokeAPI é uma API RESTful que fornece dados sobre Pokémon. Caso queira saber
 
 ## Caso tenha alguma dúvida ou sugestão, por favor, encaminhe sua mensagem para:
 
-Email: lucas.silveira0516@gmail.com
+-   Email: lucas.silveira0516@gmail.com

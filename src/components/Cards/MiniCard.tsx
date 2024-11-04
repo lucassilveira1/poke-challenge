@@ -28,9 +28,9 @@ export const MiniCard: FC<PokemonProps> = (props: PokemonProps) => {
                     src={props.pokeImg}
                     alt={props.pokeName}
                 />
+                <h1 className="card--name">{props.pokeName}</h1>
+                <span className="card--details">{typeNames}</span>
             </div>
-            <h1 className="card--name">{props.pokeName}</h1>
-            <span className="card--details">{typeNames}</span>
         </Link>
     );
 };

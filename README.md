@@ -32,23 +32,25 @@ Antes de iniciar o projeto, verifique se as seguintes tecnologias estão instala
 
     ```bash
     git clone https://github.com/lucassilveira1/poke-challenge.git
-    cd pokeapi-react-app
+    cd poke-challenge
 
     ```
 
 2. Instale as dependências:
-   npm install
+
+-   npm install
 
     # ou
 
-    yarn install
+-   yarn install
 
 3. Inicie a aplicação:
-   npm run dev
 
-    # ou
+-   npm run dev
 
-    yarn dev
+    ## ou
+
+-   yarn dev
 
 4. Abra o navegador e acesse: http://localhost:5173.
 
@@ -67,8 +69,8 @@ index.tsx: Ponto de entrada da aplicação
 
 A PokeAPI é uma API RESTful que fornece dados sobre Pokémon. Caso queira saber mais sobre a API e seus Endpoints, <a href="https://pokeapi.co/">consulte a documentação oficial da Api.</a>
 
-## Contato:
+# Contato:
 
-# Caso tenha alguma dúvida ou sugestão, por favor, encaminhe sua mensagem para:
+## Caso tenha alguma dúvida ou sugestão, por favor, encaminhe sua mensagem para:
 
 Email: lucas.silveira0516@gmail.com

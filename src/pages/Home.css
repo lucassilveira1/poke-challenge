@@ -1,0 +1,20 @@
+.container {
+    width: 1000px;
+    height: auto;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter span {
+    padding: 10px;
+    margin: 5px;
+    font-size: x-large;
+    color: #d4c68d;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,46 @@
+.nav {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 5px;
+    gap: 16px;
+}
+
+.nav img {
+    width: 200px;
+}
+
+.nav input {
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-bottom: 1px solid #d4c68d;
+}
+
+.nav button {
+    height: auto;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+@media (max-width: 1285px) {
+    .nav {
+        display: block;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 850px) {
+    .nav {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 420px;
+    }
+}

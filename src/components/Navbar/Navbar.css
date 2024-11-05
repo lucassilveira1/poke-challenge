@@ -42,5 +42,6 @@
         align-items: center;
         flex-direction: column;
         max-width: 420px;
+        margin: 10px;
     }
 }

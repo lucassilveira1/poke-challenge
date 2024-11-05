@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export interface Pokemon {
     name: string;
     url: string;
@@ -17,8 +18,17 @@ export interface PokeMoves {
         name: string;
         url: string;
     };
-    power?: number;
-    accuracy: number;
+}
+
+export interface PokeTypes {
+    [x: string]: any;
+    types: {
+        slot: number;
+        type: {
+            name: string;
+            url: string;
+        };
+    };
 }
 
 export interface PokemonDetail {
@@ -28,13 +38,7 @@ export interface PokemonDetail {
         front_default: string;
         front_shiny: string;
     };
-    types: {
-        slot: number;
-        type: {
-            name: string;
-            url: string;
-        };
-    }[];
+    types: PokeTypes[];
     stats: PokeStats[];
     moves: PokeMoves[];
 }

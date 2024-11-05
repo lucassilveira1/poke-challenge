@@ -1,13 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // imports
-import { FC, useState } from "react";
+import { FC } from "react";
 
 // styles
 import "./Card.css";
 import { PokeTypeColors as Colors } from "../../interfaces/PokeTypeColors";
-
-// react-icons
-import { IoArrowBack } from "react-icons/io5";
 
 // components
 import { StatBar } from "../PokeStatBar/StatBar";

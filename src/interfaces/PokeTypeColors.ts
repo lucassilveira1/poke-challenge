@@ -17,4 +17,5 @@ export enum PokeTypeColors {
     stellar = "#4dd0e1",
     poison = "#7b1fa2",
     dragon = "#3949ab",
+    ghost = "#e0e0e0",
 }

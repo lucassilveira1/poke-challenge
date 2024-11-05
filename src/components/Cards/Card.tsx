@@ -13,6 +13,7 @@ import { IoArrowBack } from "react-icons/io5";
 import { StatBar } from "../PokeStatBar/StatBar";
 import { Link } from "react-router-dom";
 import { PokeMoves, PokeStats, PokeTypes } from "../../interfaces/pokemon";
+import { GoBack } from "../GoBack";
 
 // interface
 interface PokemonProps {
@@ -30,11 +31,7 @@ export const Card: FC<PokemonProps> = (props: PokemonProps) => {
         <div className="pokemon--card">
             <div className="card--container">
                 <div className="pokemon--Infos">
-                    <Link to="/">
-                        <p>
-                            <IoArrowBack /> Voltar
-                        </p>
-                    </Link>
+                    <GoBack />
                     <div className="pokemon--img">
                         <img src={props.pokeImg} alt={props.pokeName} />
                     </div>
@@ -51,7 +48,10 @@ export const Card: FC<PokemonProps> = (props: PokemonProps) => {
                                     "transparent";
 
                                 return (
-                                    <Link key={index} to="/">
+                                    <Link
+                                        key={index}
+                                        to={`/pokemon/type/${typeName}`}
+                                    >
                                         <span
                                             style={{
                                                 backgroundColor:

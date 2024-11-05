@@ -23,6 +23,7 @@ export const PokemonDetailedPage: React.FC = () => {
                     pokeShinyImg={pokemonDetail.sprites.front_shiny}
                     pokeType={pokemonDetail.types}
                     pokeStats={pokemonDetail.stats}
+                    pokeMoves={pokemonDetail.moves}
                 />
             )}
         </>

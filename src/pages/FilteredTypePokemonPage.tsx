@@ -1,7 +1,7 @@
 // react
 import React from "react";
 // react-router-dom
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 // Components
 import { MiniCard } from "../components/Cards/MiniCard";
 import { GoBack } from "../components/GoBack";

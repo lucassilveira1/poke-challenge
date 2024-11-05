@@ -10,6 +10,7 @@ import { Navbar } from "./components/Navbar/Navbar";
 import { Home } from "./pages/Home";
 import { PokemonDetailedPage } from "./pages/PokemonDetailedPage";
 import { Footer } from "./components/Footer/Footer";
+import { FilteredTypePokemonPage } from "./pages/FilteredTypePokemonPage";
 function App() {
     return (
         <>
@@ -22,6 +23,10 @@ function App() {
                     <Route
                         path="/pokemon/:id"
                         element={<PokemonDetailedPage />}
+                    />
+                    <Route
+                        path="/pokemon/type/:type"
+                        element={<FilteredTypePokemonPage />}
                     />
                 </Routes>
                 <Footer />

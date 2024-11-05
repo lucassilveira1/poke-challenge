@@ -5,12 +5,13 @@ import "./Minicard.css";
 
 // router
 import { Link } from "react-router-dom";
+import { PokeTypes } from "../../interfaces/pokemon";
 
 // interfaces
 interface PokemonProps {
     pokeName: string;
     pokeImg: string;
-    pokeType: { slot: number; type: { name: string; url: string } }[];
+    pokeType: PokeTypes[];
     pokeId: number;
 }
 

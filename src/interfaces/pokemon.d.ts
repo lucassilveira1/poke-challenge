@@ -32,6 +32,7 @@ export interface PokeTypes {
 }
 
 export interface PokemonDetail {
+    [x: string]: { slot: number; type: { name: string; url: string } }[];
     id: number;
     name: string;
     sprites: {

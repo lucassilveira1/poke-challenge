@@ -9,6 +9,7 @@
 
 .nav img {
     width: 200px;
+    outline: none;
 }
 
 .nav input {
@@ -26,21 +27,18 @@
     border: none;
 }
 
-@media (max-width: 1285px) {
+@media (max-width: 1200px) {
     .nav {
-        display: block;
-        width: 100%;
-        margin: 0;
-        align-items: center;
-        justify-content: center;
+        display: flex;
     }
 }
 
 @media (max-width: 850px) {
     .nav {
         display: flex;
-        align-items: center;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         max-width: 420px;
         margin: 10px;
     }

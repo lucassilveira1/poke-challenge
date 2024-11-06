@@ -1,0 +1,41 @@
+.searchbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.searchbar select {
+    outline: none;
+    padding: 5px;
+    margin: 2px;
+    border: 1px solid #d4c68d;
+    cursor: pointer;
+}
+
+.searchbar input {
+    margin: 3px;
+}
+
+.searchbar input::placeholder {
+    color: #d4c68d;
+}
+
+@media (max-width: 850px) {
+    .searchbar {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .searchbar {
+        flex-direction: column;
+    }
+
+    .searchbar button {
+        position: absolute;
+        margin-left: 12em;
+    }
+}

@@ -19,6 +19,14 @@
     justify-content: center;
 }
 
+@media (max-width: 884px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+}
+
 @media (max-width: 850px) {
     .container {
         display: grid;

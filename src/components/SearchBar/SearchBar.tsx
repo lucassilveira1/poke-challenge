@@ -6,9 +6,13 @@ import { GoSearch } from "react-icons/go";
 import { useNavigate } from "react-router-dom";
 // styles
 import "./SearchBar.css";
+// hooks
+import { useSuggestions } from "../../hooks/useSuggestions";
+
 export const SearchBar: React.FC = () => {
     const [inputValue, setInputValue] = useState("");
     const [selectedType, setSelectedType] = useState("");
+    const suggestions = useSuggestions(inputValue);
     const navigate = useNavigate();
     const pokeTypes = [
         "normal",
@@ -42,6 +46,11 @@ export const SearchBar: React.FC = () => {
             navigate("/");
         }
     };
+
+    const handleSuggestion = (name: string) => {
+        navigate(`/pokemon/filtered/${name}`);
+        setInputValue("");
+    };
     return (
         <>
             <form className="searchbar">
@@ -65,6 +74,18 @@ export const SearchBar: React.FC = () => {
                 <button type="submit" onClick={handleSubmit}>
                     <GoSearch />
                 </button>
+                {suggestions.length > 0 && (
+                    <ul className="suggestions">
+                        {suggestions.map((name) => (
+                            <li
+                                key={name}
+                                onClick={() => handleSuggestion(name)}
+                            >
+                                {name}
+                            </li>
+                        ))}
+                    </ul>
+                )}
             </form>
         </>
     );

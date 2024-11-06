@@ -36,6 +36,12 @@
 
     .searchbar button {
         position: absolute;
-        margin-left: 12em;
+        margin-left: 15em;
+        margin-bottom: 2.5em;
+    }
+
+    .searchbar select,
+    input {
+        width: 200px;
     }
 }

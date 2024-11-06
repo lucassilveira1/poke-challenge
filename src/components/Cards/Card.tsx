@@ -1,5 +1,5 @@
 // imports
-import { FC } from "react";
+import { FC, useState } from "react";
 
 // styles
 import "./Card.css";
@@ -23,13 +23,36 @@ interface PokemonProps {
 }
 
 export const Card: FC<PokemonProps> = (props: PokemonProps) => {
+    const [isShiny, setIsShiny] = useState(false);
+
+    const toggleImage = (shiny: boolean) => {
+        setIsShiny(shiny);
+    };
+
     return (
         <div className="pokemon--card">
             <div className="card--container">
                 <div className="pokemon--Infos">
                     <GoBack />
                     <div className="pokemon--img">
-                        <img src={props.pokeImg} alt={props.pokeName} />
+                        <img
+                            src={!isShiny ? props.pokeImg : props.pokeShinyImg}
+                            alt=""
+                        />
+                        <div className="carousel-indicators">
+                            <span
+                                className={`indicator ${
+                                    isShiny ? "active" : ""
+                                }`}
+                                onClick={() => toggleImage(false)}
+                            ></span>
+                            <span
+                                className={`indicator ${
+                                    !isShiny ? "active" : ""
+                                }`}
+                                onClick={() => toggleImage(true)}
+                            ></span>
+                        </div>
                     </div>
                     <div className="pokemon">
                         <span id="pokeName">{props.pokeName}</span>

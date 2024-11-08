@@ -10,10 +10,12 @@
     padding: 5px;
     margin: 2px;
     border: 1px solid #d4c68d;
+    background-color: #131212;
+    color: #d4c68d;
     cursor: pointer;
 }
-
 .searchbar input {
+    background-color: #131212;
     margin: 3px;
 }
 
